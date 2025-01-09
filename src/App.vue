@@ -5,7 +5,7 @@ import Header from "@components/Header.vue";
 
 <template>
   <div class="flex flex-col min-h-screen">
-    <div class="fixed top-0 left-0 w-full h-fit"><Header /></div>
+    <div class="fixed top-0 left-0 z-10 w-full h-fit"><Header /></div>
     <div class="w-full h-12 mb-2 sm:h-16"></div>
     <router-view />
     <Footer />

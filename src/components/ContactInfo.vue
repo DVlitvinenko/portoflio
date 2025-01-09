@@ -15,7 +15,7 @@
       <div class="text-center">
         <h4 class="text-xl font-semibold text-gray-700">Telegram</h4>
         <p class="mt-2 text-lg text-gray-600">
-          <a
+          <a target="_blank"
             href="https://t.me/Dmitry_ops"
             class="text-blue-500 hover:underline"
             >Написать в Telegram</a
@@ -30,7 +30,7 @@
       <div class="text-center">
         <h4 class="text-xl font-semibold text-gray-700">Email</h4>
         <p class="mt-2 text-lg text-gray-600">
-          <a
+          <a target="_blank"
             href="mailto:dimaboblitvinenko@gmail.com"
             class="text-blue-500 hover:underline"
             >dimaboblitvinenko@gmail.com</a

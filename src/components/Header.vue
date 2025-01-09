@@ -45,13 +45,17 @@
           >
         </div>
       </nav>
+      <div  @click="toggleMenu"
+        v-if="isMenuOpen"
+        class="fixed top-0 left-0 w-screen h-screen z-1"
+      ></div>
       <Transition class="" name="slide-fade">
         <div
           v-show="isMenuOpen"
           class="fixed top-0 flex flex-col items-center w-full gap-2 py-5 rounded-bl-full shadow-md ring-0 sm:hidden bg-slate-200 bg-opacity-90"
         >
           <div
-            class="overflow-hidden w-fit h-fit"
+            class="overflow-hidden w-fit h-fit z-1"
             v-for="{ path, name } in routes"
           >
             <router-link
@@ -97,7 +101,7 @@ const routes = [
 }
 
 .slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter-from,

@@ -14,8 +14,8 @@
           >Telegram</a
         >
         <a
-          href="mailto:dimaboblitvinenko@gmail.com"
           target="_blank"
+          href="mailto:dimaboblitvinenko@gmail.com"
           class="text-white"
           >Email</a
         >

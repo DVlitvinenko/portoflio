@@ -1,6 +1,6 @@
 <template>
-  <section id="projects" class="mt-10">
-    <div class="container mx-auto text-center">
+  <section id="projects" class="mt-10 mb-2">
+    <div class="relative z-0 pl-1 pr-12 mx-auto space-y-10 text-center sm:px-20">
       <div
         v-for="(project, index) in projects"
         :key="project.id"
@@ -25,8 +25,12 @@
             Перейти к проекту
           </button>
         </div>
-
-        <CanvasProject :canvasUrl="project.canvasUrl" :projectId="project.id" />
+        <div class="h-full border-4 border-blue-500 rounded-2xl c-max-h">
+          <CanvasProject
+            :canvasUrl="project.canvasUrl"
+            :projectId="project.id"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -74,18 +78,9 @@ const openProject = (url: string) => {
 
 <style scoped>
 /* Общие стили для страницы проектов */
-#projects {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
 
-.project-description {
-  scroll-snap-align: start;
-}
-
-.project-card {
-  scroll-snap-align: start;
-  margin-top: 0px;
+.c-max-h {
+  max-height: calc(100vh - 80px);
+  height: calc(100vh - 30px);
 }
 </style>

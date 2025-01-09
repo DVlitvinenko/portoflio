@@ -1,18 +1,18 @@
 <template>
-  <div class="w-full h-screen pt-0 pb-20 sm:p-2">
+  <div class="w-full c-max-h rounded-xl ">
     <div
       ref="canvasWrapper"
-      class="relative w-full h-[86%] transition-all duration-700 transform"
+      class="relative w-full transition-all duration-700 transform c-max-h rounded-3xl "
     >
-      <div class="w-full h-[86%] overflow-y-hidden canvas-container">
-        <iframe
-          scrolling="no"
+      <div class="relative z-0 w-full overflow-y-hidden c-max-h rounded-xl canvas-container">
+        <iframe 
+          scrolling="yes"
           ref="iframe"
           :src="projectUrl"
-          class="z-0 w-full h-full border-none"
+          class="relative z-0 w-full h-full border-none rounded-xl c-scale"
           frameborder="0"
           allow="fullscreen"
-          sandbox="allow-scripts allow-same-origin"
+          sandbox="allow-scripts allow-same-origin "
           :title="projectUrl"
         ></iframe>
       </div>
@@ -34,22 +34,11 @@ const projectUrl = props.canvasUrl;
 </script>
 
 <style scoped>
-.canvas-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 10px;
+.c-max-h {
+  height: calc(100vh - 88px);
 }
 
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
+.translate-z-0{transform: translateZ(-1);}
+
+.c-scale > #document{transform: scale(0.5);}
 </style>
