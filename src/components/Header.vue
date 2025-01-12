@@ -1,5 +1,5 @@
 <template>
-  <header class="px-2 py-2 sm:py-5 bg-gradient-to-r from-gray-200 to-white">
+  <header class="px-2 py-2 bg-gray-200 sm:py-4 bg-opacity-95">
     <div class="container flex items-center justify-between mx-auto">
       <div class="lg:w-1/3">
         <img

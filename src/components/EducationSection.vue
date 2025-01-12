@@ -1,7 +1,7 @@
 <template>
-  <section id="education" class="py-2 bg-gray-100 sm:py-20">
+  <section id="education" class="py-2 bg-gray-100 sm:py-10">
     <div class="container mx-auto text-center">
-      <h2 class="sm:text-3xl text-xl font-semibold">Образование и языки</h2>
+      <h2 class="text-xl font-semibold sm:text-3xl">Образование и языки</h2>
 
       <div class="mt-8">
         <h3 class="text-2xl font-semibold">Образование</h3>

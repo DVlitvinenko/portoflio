@@ -1,7 +1,7 @@
 <template>
-  <section id="skills" class="py-2 bg-gray-100 sm:py-20">
+  <section id="skills" class="py-2 bg-gray-100 sm:py-10">
     <div class="container mx-auto text-center">
-      <h2 class="sm:text-3xl text-xl font-semibold">Ключевые навыки</h2>
+      <h2 class="text-xl font-semibold sm:text-3xl">Ключевые навыки</h2>
       <div class="grid grid-cols-1 gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <h4 class="text-xl font-semibold text-blue-500">Frontend</h4>

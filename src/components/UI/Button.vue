@@ -2,7 +2,7 @@
   <button
     :class="[
       'px-6 py-3 cursor-pointer rounded-button focus-within:border-none text-text-light focus:border-none focus:outline-none active:bg-opacity-20 w-full hover:bg-opacity-80 transition-opacity',
-      variant === 'primary' && 'bg-button-primary border-none',
+      variant === 'primary' && 'bg-blue-500 text-white border-none',
       variant === 'secondary' && 'bg-inherit border-button-border border-2',
       variant === 'danger' && 'bg-state-error',
       disabled || isLoading
