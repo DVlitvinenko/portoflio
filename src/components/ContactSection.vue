@@ -11,5 +11,4 @@
 import ContactInfo from "@components/ContactInfo.vue";
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

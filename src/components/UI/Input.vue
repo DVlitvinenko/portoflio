@@ -1,11 +1,6 @@
 <template>
-  <input
-    class="px-6 py-3 border-2 hover:border-gray-400 rounded-button bg-background-card focus:outline-none"
-    type="{{type}}"
-    placeholder="{{placeholder}}"
-    value="{{modelValue}}"
-    @input="updateValue"
-  />
+  <input class="px-6 py-3 border-2 hover:border-gray-400 rounded-button bg-background-card focus:outline-none"
+    type="{{type}}" placeholder="{{placeholder}}" value="{{modelValue}}" @input="updateValue" />
 </template>
 
 <script setup lang="ts">

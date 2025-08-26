@@ -1,7 +1,7 @@
 <template>
   <section id="experience" class="py-2 sm:py-20">
     <div class="container mx-auto text-center">
-      <h2 class="sm:text-3xl text-xl font-semibold">Опыт работы</h2>
+      <h2 class="text-xl font-semibold sm:text-3xl">Опыт работы</h2>
       <p class="mt-4 text-lg text-gray-700">
         За время работы в диджитал-агентстве "KWOL", я разрабатывал сайты и
         сервисы, использующие React.js, TypeScript, Laravel и другие современные
@@ -9,7 +9,7 @@
       </p>
 
       <div class="mt-8">
-        <h3 class="sm:text-2xl text-base font-semibold text-center">
+        <h3 class="text-base font-semibold text-center sm:text-2xl">
           BeeBeep — Сервис бронирования авто
         </h3>
         <p class="mt-4 text-lg text-gray-700">
@@ -20,7 +20,7 @@
       </div>
 
       <div class="mt-2 sm:mt-16">
-        <h3 class="sm:text-2xl text-base font-semibold text-center">
+        <h3 class="text-base font-semibold text-center sm:text-2xl">
           Glorax — Сайт интерактивной прогулки
         </h3>
         <p class="mt-4 text-lg text-gray-700">

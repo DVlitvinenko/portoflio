@@ -3,17 +3,12 @@
     <div @click.stop="handleShow">
       <slot />
     </div>
-    <Dialog :is-showed="isShowed" @close="handleShow"
-      ><div class="space-y-4">
+    <Dialog :is-showed="isShowed" @close="handleShow">
+      <div class="space-y-4">
         <p class="w-full text-2xl font-bold text-center">{{ props.title }}</p>
 
         <div class="flex space-x-2">
-          <Button
-            @click.stop="handleShow"
-            variant="danger"
-            v-if="props.cancel"
-            >{{ props.cancel }}</Button
-          >
+          <Button @click.stop="handleShow" variant="danger" v-if="props.cancel">{{ props.cancel }}</Button>
           <Button @async-click.stop="handleConfirm">{{ props.confirm }}</Button>
         </div>
       </div>
@@ -50,5 +45,3 @@ const handleShow = () => {
   isShowed.value = !isShowed.value;
 };
 </script>
-
-<style scoped></style>

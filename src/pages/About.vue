@@ -7,5 +7,3 @@
 import AboutSection from "@components/AboutSection.vue";
 import SkillsSection from "@components/SkillsSection.vue";
 </script>
-
-<style scoped></style>

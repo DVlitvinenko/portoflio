@@ -24,11 +24,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-// Этот компонент не требует дополнительных данных
-</script>
-
-<style scoped>
-/* Стиль для секции "Образование и языки" */
-</style>

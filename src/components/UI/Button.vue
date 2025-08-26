@@ -1,18 +1,14 @@
 <template>
-  <button
-    :class="[
-      'px-6 py-3 cursor-pointer rounded-button focus-within:border-none text-text-light focus:border-none focus:outline-none active:bg-opacity-20 w-full hover:bg-opacity-80 transition-opacity',
-      variant === 'primary' && 'bg-blue-500 text-white border-none',
-      variant === 'secondary' && 'bg-inherit border-button-border border-2',
-      variant === 'danger' && 'bg-state-error',
-      disabled || isLoading
-        ? 'cursor-default bg-opacity-60 hover:bg-opacity-60'
-        : '',
-      isLoading && 'animate-border',
-    ]"
-    :disabled="disabled || isLoading"
-    @click="handleClick"
-  >
+  <button :class="[
+    'px-6 py-3 cursor-pointer rounded-button focus-within:border-none text-text-light focus:border-none focus:outline-none active:bg-opacity-20 w-full hover:bg-opacity-80 transition-opacity',
+    variant === 'primary' && 'bg-blue-500 text-white border-none',
+    variant === 'secondary' && 'bg-inherit border-button-border border-2',
+    variant === 'danger' && 'bg-state-error',
+    disabled || isLoading
+      ? 'cursor-default bg-opacity-60 hover:bg-opacity-60'
+      : '',
+    isLoading && 'animate-border',
+  ]" :disabled="disabled || isLoading" @click="handleClick">
     <slot />
   </button>
 </template>
@@ -74,6 +70,7 @@ const handleClick = async (e: MouseEvent) => {
   from {
     background-position: 0% 0%;
   }
+
   to {
     background-position: 200% 0%;
   }
@@ -82,9 +79,11 @@ const handleClick = async (e: MouseEvent) => {
 .bg-button-primary {
   --button-color: #84a59d;
 }
+
 .bg-inherit {
   --button-color: #fafafa;
 }
+
 .bg-state-error {
   --button-color: #e53e3e;
 }
