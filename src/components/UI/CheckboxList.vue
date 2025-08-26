@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits, ref, computed, TransitionGroup } from "vue";
+import { defineProps, defineEmits, ref, computed } from "vue";
 import Input from "./Input.vue";
 
 interface ListItem<T> {

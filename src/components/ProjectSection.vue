@@ -1,10 +1,8 @@
 <template>
   <section id="projects" class="mt-10 mb-2">
-    <div
-      class="relative z-0 p-2 mx-auto space-y-10 text-center sm:p-20 "
-    >
+    <div class="relative z-0 p-2 mx-auto space-y-10 text-center sm:p-20">
       <div
-        v-for="(project, index) in projects"
+        v-for="project in projects"
         :key="project.id"
         class="-mt-1"
         ref="projectSections"
@@ -67,7 +65,9 @@
           </div>
         </Transition>
 
-        <div class="h-full scale-[0.85] -my-5 -translate-x-5 border-4 border-blue-500 rounded-2xl c-max-h sm:m-0 sm:translate-x-0 sm:scale-100">
+        <div
+          class="h-full scale-[0.85] -my-5 -translate-x-5 border-4 border-blue-500 rounded-2xl c-max-h sm:m-0 sm:translate-x-0 sm:scale-100"
+        >
           <CanvasProject
             :canvasUrl="project.canvasUrl"
             :projectId="project.id"
@@ -79,8 +79,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, Transition } from "vue";
 import CanvasProject from "@components/CanvasProject.vue";
+import { ref } from "vue";
 
 interface ProjectData {
   stack: string;

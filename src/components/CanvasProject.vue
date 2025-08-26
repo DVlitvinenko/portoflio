@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, defineProps } from "vue";
+import { defineProps } from "vue";
 
 interface CanvasProjectProps {
   canvasUrl: string;

@@ -25,7 +25,6 @@
 
 <script setup lang="ts">
 import logo from "@assets/logo.svg";
-import { Transition } from "vue";
 
 const props = defineProps<{ isLoading: boolean }>();
 </script>
